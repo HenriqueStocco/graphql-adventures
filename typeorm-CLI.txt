@@ -1,0 +1,32 @@
+# Create a new migration
+pnpm typeorm migration:create ./src/database/migrations/migrationName
+
+# Execute all migrations pending
+pnpm typeorm migration:run -- -d ./src/database/index.tx
+
+# Revert most recently migration
+pnpm typeorm migration:rever -- -d ./src/database/index.ts
+
+# Running fake migrations. This will add the migration to the migrations table without running it
+pnpm typeorm migration:run --fake
+
+# Revert the fake migration
+pnpm typeorm migration:revert --fake
+
+# Show migrations
+pnpm typeorm migration:show -- -d ./src/database/index.ts
+
+# Sync database schema
+pnpm typeorm schema:sync
+
+# Drop database schema
+pnpm typeorm schema:drop -- -d ./src/database/index.ts
+
+# Run SQL Query
+pnpm typeorm query "SELECT * FROM USERS"
+
+# Clear cache
+pnpm typeorm cache:clear
+
+# Check version of typeorm
+pnpm typeorm version
