@@ -15,12 +15,19 @@ Hono API(or Fastify) - as HTTP Server provider
 #### NOTES
 
 **GET**    -> /notes
+
 **GET**    -> /notes/:noteId
+
 **POST**   -> /notes/create
+
 **PUT**    -> /notes/update
+
 **PATCH**  -> /notes/:noteId/title
+
 **PATCH**  -> /notes/:noteId/description
+
 **DELETE** -> /notes/all
+
 **DELETE** -> /notes/:noteId
 
 #### USERS
