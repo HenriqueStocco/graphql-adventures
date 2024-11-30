@@ -8,7 +8,7 @@ Learning how to work graphql apis building a note block (Full CRUD) + User sessi
 
 ## Techs
 TypeORM + Postgres container (Docker)
-GraphQL
+GraphQL / Apollo Server
 Hono API(or Fastify) - as HTTP Server provider
 
 ## Routes
